@@ -1,0 +1,12 @@
+img, object, embed, video {
+    max-width: 100%
+}
+.bbutton {
+    min-height: 48px;
+    min-width: 48px;
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+}

@@ -1,0 +1,188 @@
+img, object, embed, video {
+    max-width: 100%
+}
+header, .row {
+    width: 100%;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Allerta';
+}
+h2 {
+    font-size: 36px;
+    font-family: 'Allerta';
+}
+
+.bbutton {
+    min-height: 48px;
+    min-width: 48px;
+    font-size: 16px;
+    font-family: 'Francois One', Arial;
+    padding: 8px 16px;
+    max-width: 80%;
+    display: block;
+    margin: 45px auto;
+    color:#fff;
+    background-color: #d01a24;
+    border: solid 2px #d01a24;
+    border-radius: 4px;
+}
+
+.bbutton:hover {
+    background-color: aqua;
+    color: #000;
+    border: solid 2px #000;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e8e8e8;
+    margin: 0 auto;
+}
+
+body, html {
+    width: 100%;
+    background-color: #5f5f5f;
+    margin: 0;
+    padding: 0;
+}
+
+div.menu-wrapper ul.nav-list li {
+    list-style: none;
+    display: inline;
+    float: right;
+    font-size: 16px;
+    line-height: 175px;
+    font-family: 'Roboto';    
+}
+
+nav ul.nav-list li.menu-item a {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto';
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 24px 12px;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    margin-right:auto;
+    margin-left: auto;
+    max-width: 1100px;
+    background-color: #888;
+    
+}
+div.logo-wrapper {
+    width: auto;
+    max-height: 200px;
+    order: 0;
+}
+
+div.menu-wrapper {
+    width: 75%;
+    padding-right: 50px;
+    float: right;    
+}
+
+.title {
+    text-align:center;
+}
+
+.sub-title {
+    text-align:center;
+}
+.hero-container .title-container {
+    display: block;
+    background-color: rgba(208,26,36,0.7);
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 12px 0;
+}
+
+.home .title, .home .sub-title {
+    color: #fff;
+}
+
+.row .hero-container {
+    background-image: url('http://bwagner-webdev.com/images/home-hero-mobile.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+    min-height: 140px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* small devices */
+@media screen and (max-width: 450px) {
+    .row .hero-container {
+        background-image: url('http://bwagner-webdev.com/images/home-hero-mobile.png');
+    }
+    
+    h1 {
+        font-size: 26px;
+        font-family: 'Allerta';
+    }
+    
+    h2 {
+        font-size: 20px;
+        font-family: 'Allerta';
+    }
+}
+
+/* Tablets and small screens */
+@media screen and (min-width: 451px)  {
+    .row .hero-container {
+        background-image: url('http://bwagner-webdev.com/images/home-hero-tablet.png');
+        background-size: cover;
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    
+    h1 {
+        font-size: 30px;
+        font-family: 'Allerta';
+    }
+    
+    h2 {
+        font-size: 24px;
+        font-family: 'Allerta';
+    }
+}
+
+/* larger tablets and small computers */
+@media screen and (min-width: 721px) {
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 901px) {
+    .row .hero-container {
+        background-image: url('http://bwagner-webdev.com/images/home-hero.png');
+        background-size: cover;
+        height: auto;
+        
+        padding-top: 300px;
+        padding-bottom: 200px; 
+    }
+    
+    h1 {
+        font-size: 44px;
+        font-family: 'Allerta';
+    }
+    
+    h2 {
+        font-size: 34px;
+        font-family: 'Allerta';
+    }
+}
+@media screen and (min-width: 1201px) {
+    
+}

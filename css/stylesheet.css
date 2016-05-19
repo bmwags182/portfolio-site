@@ -1,13 +1,23 @@
 img, object, embed, video {
     max-width: 100%
 }
+
 header, .row {
     width: 100%;
 }
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 h1 {
     font-size: 40px;
     font-family: 'Allerta';
 }
+
 h2 {
     font-size: 36px;
     font-family: 'Allerta';
@@ -37,15 +47,13 @@ h2 {
 .page-container {
     width: 100%;
     max-width: 1100px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #e8e8e8;
+    background-color: #8e8e8e;
     margin: 0 auto;
 }
 
 body, html {
     width: 100%;
-    background-color: #5f5f5f;
+    background-color: #1a2359;
     margin: 0;
     padding: 0;
 }
@@ -61,7 +69,7 @@ div.menu-wrapper ul.nav-list li {
 
 nav ul.nav-list li.menu-item a {
     font-size: 16px;
-    color: #fff;
+    color: #000;
     font-family: 'Roboto';
     text-decoration: none;
     text-transform: uppercase;
@@ -74,11 +82,11 @@ nav ul.nav-list li.menu-item a {
     margin-right:auto;
     margin-left: auto;
     max-width: 1100px;
-    background-color: #888;
-    
+    background-color: #eee;
 }
+
 div.logo-wrapper {
-    width: auto;
+    width: 25%;
     max-height: 200px;
     order: 0;
 }
@@ -96,12 +104,40 @@ div.menu-wrapper {
 .sub-title {
     text-align:center;
 }
+
 .hero-container .title-container {
     display: block;
     background-color: rgba(208,26,36,0.7);
     margin: 0 auto;
     max-width: 60%;
     padding: 12px 0;
+}
+
+.row#hero {
+    margin-top: 78px;
+}
+
+.row-inner{
+    padding: 10px 15px;
+}
+
+.mission-wrapper {
+    background-color: #747db3;
+    padding: 1px 10px;
+}
+
+.intro {
+    color: white;
+    text-align: center;
+}
+
+#mission {
+    background-color: #3547b3;
+}
+
+.columns-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home .title, .home .sub-title {
@@ -121,6 +157,7 @@ div.menu-wrapper {
 
 /* small devices */
 @media screen and (max-width: 450px) {
+    
     .row .hero-container {
         background-image: url('http://bwagner-webdev.com/images/home-hero-mobile.png');
     }
@@ -134,6 +171,11 @@ div.menu-wrapper {
         font-size: 20px;
         font-family: 'Allerta';
     }
+    
+    h4 {
+        font-size: 18px;
+        font-family: 'Raleway';
+    }
 }
 
 /* Tablets and small screens */
@@ -145,7 +187,7 @@ div.menu-wrapper {
         padding-top: 120px;
         padding-bottom: 80px;
     }
-    
+        
     h1 {
         font-size: 30px;
         font-family: 'Allerta';
@@ -154,6 +196,52 @@ div.menu-wrapper {
     h2 {
         font-size: 24px;
         font-family: 'Allerta';
+    }
+    
+    h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 75px;
+    }
+    
+    div.logo-wrapper{
+        width: 100px;
+        max-width: 100px;
+    }
+    
+    div.menu-wrapper {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    
+    .fa-bars {
+        padding-top: 15px;
+        float: right;
+    }
+    
+    ul.nav-list {
+        display: none;
+    }
+}
+@media screen and (min-width: 601px) {
+    span#mobile-menu { 
+        display:none;
+    }
+    
+    .row#hero {
+        margin-top: 191px;
+    }
+    
+    div.logo-wrapper {
+        width: 200px;
+    }
+    
+    .logo {
+        width: 100%;
     }
 }
 
@@ -181,6 +269,14 @@ div.menu-wrapper {
     h2 {
         font-size: 34px;
         font-family: 'Allerta';
+    }
+    
+     h4 {
+        font-size: 32px;
+    }
+    
+    .mission-wrapper {
+        margin: 5px 30px;
     }
 }
 @media screen and (min-width: 1201px) {

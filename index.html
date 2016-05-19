@@ -7,6 +7,7 @@
         <title>Bret Wagner</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto|Francois+One|Allerta|Anton' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+        <script src="https://use.fontawesome.com/9fde0e7412.js"></script>
     </head>
     <body class="home page">
         <div class="page-container">
@@ -16,16 +17,17 @@
                         <div classs="logo-wrapper">
                             <a href="/index.html" title="Home">
                                 <picture>
-                                    <source srcset="http://bwagner-webdev.com/images/logo.png">
-                                    <img src="http://bwagner-webdev.com/images/logo.png" alt="Bret Wagner Web Developer">
+                                    <source srcset="http://bwagner-webdev.com/images/logo-mobile.png" media="(max-width: 600px)">
+                                    <source srcset="http://bwagner-webdev.com/images/logo.png" media="(min-width: 450px)">
+                                    <img class="logo" src="http://bwagner-webdev.com/images/logo-mobile.png" alt="Bret Wagner Web Developer">
                                 </picture>
                             </a>
                         </div>
                         <div class="menu-wrapper">
                             <ul class="nav-list">
                                 <li class="menu-item"><a href="/parks.html">Maps Demo</a></li>
-
                             </ul>
+                            <span class="fa fa-bars fa-3x" id="mobile-menu" aria-hidden="true"></span>
                         </div>
                     </div>
                 </nav>
@@ -38,7 +40,27 @@
                     </div>
                 </div>                
             </section>
-            
+            <section class="row" id="mission">
+                <div class="row-inner">
+                    <div class="mission-wrapper">
+                        <h4 class="intro">
+                            I've always been able to understand computers.<br />
+                            It was only natural that I make a career of it.<br />
+                            Nearly 100% self-driven and self-taught.
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="row-inner">
+                    <div class="columns-wrapper">
+                        <div class="column2" id="growing-up">
+                        </div>
+                        <div class="column2" id="education">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>

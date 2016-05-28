@@ -58,10 +58,43 @@ body, html {
     padding: 0;
 }
 
+#side-menu {
+    position: absolute;
+    right: -300px;
+    width: 300px;
+    z-index: 50;
+    height: 100%;
+    background-color: #eee;
+}
+
+#side-menu .nav-mobile .mobile-item {
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+
+#side-menu .nav-mobile .menu-item a {
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.open {
+    position: absolute;
+    right: 0;
+    -webkit-transform: .3s;
+    -moz-webkit-transform: .3s;
+    -o-webkit-transform: .3s;
+    
+}
+
+.nav-container .menu-wrapper .nav-list {
+    float: right;
+}
+
 div.menu-wrapper ul.nav-list li {
     list-style: none;
     display: inline;
-    float: right;
     font-size: 16px;
     line-height: 175px;
     font-family: 'Roboto';    
@@ -203,7 +236,7 @@ div.menu-wrapper {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 915px ) {
     .logo {
         width: 75px;
     }
@@ -220,14 +253,15 @@ div.menu-wrapper {
     
     .fa-bars {
         padding-top: 15px;
-        float: right;
+        position: absolute;
+        right: 35px;
     }
     
     ul.nav-list {
         display: none;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 916px ) {
     span#mobile-menu { 
         display:none;
     }

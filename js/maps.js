@@ -113,9 +113,6 @@ function initMap() {
                     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
                         document.getElementById('legend'));
                     var infowindow = new google.maps.InfoWindow();
-                    var legend = document.getElementById('legend');
-                    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
-  document.getElementById('legend'));
                     var marker, i;
 
                     for (i = 0; i < locations.length; i++) { 
